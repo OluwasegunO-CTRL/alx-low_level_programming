@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - draw diagonal line
+ * print_diagonal - draw diagonal line
  * @n: number of times underscore is printed
  *Description: can only use _putchar to rrpint
  */
