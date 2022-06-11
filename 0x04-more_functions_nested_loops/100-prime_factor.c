@@ -11,17 +11,16 @@
 int main(void)
 {
 	int c;
-	long num = 612852475143;
+	long int num = 612852475143;
 
-	for (c = (int) sqrt(num); c > 2; c++)
+	for (c = 2; c <= sqrt(num); c++)
 	{
 		if (num % c == 0)
-		
 		{
-			printf("%d\n", c);
-			break;
+			num = num / c;
+			c = 1;
 		}
 	}
-
+		printf("%ld\n", num);
 	return (0);
 }
