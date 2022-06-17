@@ -2,27 +2,28 @@
 
 /**
  * leet - encode a string into 1337
- * @s: string
- * Return: encoded string 's'
+ * @x: string
+ * Return: encoded string 'x'
  */
 
-char *leet(char *s)
+char *leet(char *x)
 {
-	int i;
+	int i = 0, b, l = 5;
+	char tr[5] = {'A', 'E', 'O', 'T', 'L'};
+	char trw[5] = {'4', '3', '0', '7', '1'};
 
-	for (i = 0; s[i] != 0; i++)
+	while (x[i])
 	{
-		while (s[i] == 97 || s[i] == 65)
-			s[i] = '4';
-		while (s[i] == 101 || s[i] == 69)
-			s[i] = '3';
-		while (s[i] == 111 || s[i] == 79)
-			s[i] = '0';
-		while (s[i] == 116 || s[i] == 84)
-			s[i] = '7';
-		while (s[i] == 108 || s[i] == 76)
-			s[i] = '1';
+		b = 0;
+		while (b < l)
+		{
+			if (x[i] == tr[b] || x[i] - 32 == tr[b])
+			x[i] = trw[b];
+			b++;
+		}
+		i++;
+
 	}
 
-	return (s);
+	return (x);
 }
