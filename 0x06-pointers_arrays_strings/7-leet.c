@@ -12,15 +12,15 @@ char *leet(char *s)
 
 	for (i = 0; s[i] != 0; i++)
 	{
-		while (s[i] == 'a' || s[i] == 'A')
+		while (s[i] == 97 || s[i] == 65)
 			s[i] = '4';
-		while (s[i] == 'e' || s[i] == 'E')
+		while (s[i] == 101 || s[i] == 69)
 			s[i] = '3';
-		while (s[i] == 'o' || s[i] == 'O')
+		while (s[i] == 111 || s[i] == 79)
 			s[i] = '0';
-		while (s[i] == 't' || s[i] == 'T')
+		while (s[i] == 116 || s[i] == 84)
 			s[i] = '7';
-		while (s[i] == 'l' || s[i] == 'L')
+		while (s[i] == 108 || s[i] == 76)
 			s[i] = '1';
 	}
 
