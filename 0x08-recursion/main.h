@@ -12,3 +12,4 @@ int halp(int c, int i);
 int hai(int n, int d);
 int get_length(char *s);
 int my_pal(char *s, int l);
+int findsrc(char *s, char c, int i, int p);
