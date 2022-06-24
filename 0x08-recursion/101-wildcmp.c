@@ -28,7 +28,7 @@ int wildcmp(char *s1, char *s2)
 	{
 		if (*(s1 + 1) == '*')
 			return (wildcmp(++s1, s2));
-		else if
+		else
 		{
 		return (wildcmp(s1, findsrc(s2, *(s1 + 1), 0, 0) + s2));
 		}
@@ -37,7 +37,7 @@ int wildcmp(char *s1, char *s2)
 	{
 		if (*(s2 + 1) == '*')
 			return (wildcmp(s1, ++s2));
-		else if
+		else
 		{
 		return (wildcmp(s1 + findsrc(s1, *(s2 + 1), 0, 0), s2));
 		}
