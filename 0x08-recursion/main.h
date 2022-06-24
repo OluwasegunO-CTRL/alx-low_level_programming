@@ -8,3 +8,7 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int _putchar(char c);
+int halp(int c, int i);
+int hai(int n, int d);
+int get_length(char *s);
+int my_pal(char *s, int l);
