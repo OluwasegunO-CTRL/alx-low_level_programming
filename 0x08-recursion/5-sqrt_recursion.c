@@ -25,7 +25,7 @@ int halp(int c, int i)
 	square = i * i;
 	if (square == c)
 		return (i);
-	esle if (square < c)
+	else if (square < c)
 		return (halp(c, i + 1));
 	else
 		return (-1);
