@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * atoi - Convert a string to integer.
+ * _atoi - Convert a string to integer.
  * @s: char array string
  * Description: Number in the string can be preceded by an infinite
  * number of characters.
@@ -12,7 +12,7 @@
  * Return: first integer found in string
  */
 
-int atoi(char *s)
+int _atoi(char *s)
 {
 	int i;
 	int h, p;
