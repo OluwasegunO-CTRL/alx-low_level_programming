@@ -1,3 +1,3 @@
-#define PI
-#ifndef PI 3.14159265359
-#endif/*PI*/
+#ifndef PI
+#define PI 3.14159265359
+#endif /*PI*/
