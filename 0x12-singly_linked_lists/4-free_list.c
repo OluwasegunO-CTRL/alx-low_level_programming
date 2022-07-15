@@ -7,15 +7,19 @@
  * @head: linked list
  * Return: Freedom!
  */
+
 void free_list(list_t *head)
 {
 	list_t *tmp;
-	while (head != NULL)
+	list_t *nxt;
+
+	tmp = head;
+
+	while (tmp != NULL)
 	{
-		tmp = head;
-		head = head->next;
+		nxt = tmp->next;
 		free(tmp->str);
 		free(tmp);
+		tmp = nxt;
 	}
-	free(head);
 }
